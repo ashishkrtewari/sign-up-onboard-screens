@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Onboarding Pages</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./styles.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-full mx-auto text-center mb-10 pb-10 pt-10 bg-gradient-to-r from-green-400 to-blue-500">
+      <h1 class="font-bold text-2xl text-white">Sign Up - Onboarding Pages</h1>
+      <p class="text-white mt-4">These pages can be used in your project as Login, Sign Up and Onboarding Pages</p>
+    </div>
+    <div class="w-full flex justify-center">
+      <button class="page-target bg-yellow-400 p-5 rounded-md text-gray-700 m-5 font-bold" type="button" data-target="sign-up-1">
+        <a href="#sign-up-1">SIGN UP 1</a>
+      </button>
+      <button class="page-target bg-yellow-400 p-5 rounded-md text-gray-700 m-5 font-bold" type="button" data-target="sign-up-2">
+        <a href="#sign-up-2">SIGN UP 2</a>
+      </button>
+    </div>
+    <div id="dialog" class="inset-y-0 absolute h-screen w-screen opacity-0 transition duration-900 bg-white "></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
