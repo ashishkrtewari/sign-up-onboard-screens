@@ -39,7 +39,7 @@
           signIn: 'Sign Up',
           signUp: 'Sign In'
         }
-      }
+      };
 
       formHeadline.innerHTML = labels.formHeadline[type];
       actionButton.innerHTML = labels.actionButton[type];
