@@ -38,7 +38,7 @@
     </div>
     <form class="flex items-center justify-center h-full w-full flex-col">
       <div class="w-1/2 mt-10 bg-white px-5 py-4 rounded-xl">
-        <h4 class="text-3xl mb-5 text-pink-700">Sign In 2</h4>
+        <h4 class="text-3xl mb-5 form-headline" data-target="signIn">Sign Up</h4>
         <label for="username" class="block text-xs mb-1 text-gray-500"
           >Username</label
         >
@@ -47,7 +47,7 @@
           placeholder="Username"
           name="username"
           id="username"
-          class="w-full text-sm border rounded-sm border-pink-700 px-1 py-2 focus:border-blue-600 focus:outline-none"
+          class="w-full text-sm border rounded-sm border-blue-300 px-1 py-2 focus:border-blue-600 focus:outline-none"
         />
         <label for="password" class="block mt-3 text-xs mb-1 text-gray-500"
           >Password</label
@@ -57,22 +57,24 @@
           placeholder="Password"
           name="password"
           id="password"
-          class="w-full text-sm border rounded-sm border-pink-700 px-1 py-2 focus:border-blue-600 focus:outline-none"
+          class="w-full text-sm border rounded-sm border-blue-300 px-1 py-2 focus:border-blue-600 focus:outline-none"
         />
-        <a href="javascript:void()" class="text-sm text-blue-800 block mt-3"
+        <a
+          href="javascript:void()"
+          class="text-sm text-blue-600 block mt-3 forgot-password opacity-0"
           >Forgot Password</a
         >
         <button
           type="button"
-          class="text-md bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-green-400 hover:to-blue-500 text-white w-full p-3 font-medium rounded-sm mt-4 focus:outline-none"
+          class="action-button text-md bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-green-400 hover:to-blue-500 text-white w-full p-3 font-medium rounded-sm mt-4 focus:outline-none"
         >
-          LOGIN
+          Create Account
         </button>
         <p class="text-sm mt-3 text-center">
-          Already have an account?
-          <span class="text-blue-800 cursor-pointer"
-            ><a href="javascript:void()">Sign In</a></span
-          >
+          <span class="already-account">Already have an account?</span>
+          <span class="text-blue-600 mt-3 cursor-pointer">
+            <a href="javascript:void(0)" onclick="app.switchState()" class="sign-in-link">Sign In</a>
+          </span>
         </p>
       </div>
     </form>
